@@ -1,0 +1,199 @@
+/* блоки с задачами */
+.item-dr {
+  // width: 150px;
+  // height: 66px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  cursor: grab;
+}
+
+.item-dr:active {
+  cursor: grabbing;
+}
+// .hide{
+//   display: none;
+// }
+
+.hovered{
+  background: red;
+}
+.item-dr{
+	padding: 12px 15px 15px 15px;
+	background: white;
+	box-shadow: $shadow;
+	cursor: grab;
+	margin-bottom: 15px;
+	user-select: none;
+	border-radius: 10px;
+	position: relative;
+
+}
+.color_red{
+	color: #FF5722;
+}
+.item-dr{
+
+	&_title {
+		font-size: 14px;
+		font-weight: 400;
+		width: 190px;
+	}
+
+	&_top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	&_ico-1 {
+		margin-right: 10px;
+	}
+	&_time-data{
+		color: $color-text-lite;
+	}
+	&_number-vetki{
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+	}
+	&_foto{
+		display: flex;
+		align-items: center;
+		color: $color-text-lite;
+
+	}
+	&_time-data{
+		display: flex;
+		flex-direction: column;
+		font-weight: 600;
+		font-size: 12px;
+	}
+	&_img{
+		margin-right: 10px;
+	}
+&_vetki-timer{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+&_number{
+	margin-right: 5px;
+	font-size: 12px;
+
+}
+
+&_start{
+	content: '';
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/pult-vkl.svg');
+	display: block;
+	transition: 0.3s;
+}
+
+
+
+
+// &_start:hover{
+// 	background-image: url('../img/pult-vikl.svg');
+
+// }
+
+&_stop{
+	content: '';
+	transition: 0.3s;
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/pult-vikl.svg');
+	display: block;
+}
+// &_stop:hover{
+// 	background-image: url('../img/pult-vkl.svg');
+// }
+
+
+&_ico-start{
+	content: '';
+	transition: 0.3s;
+	width: 18px;
+	height: 18px;
+	background-image: url('../img/title.svg');
+	background-size: 100%;
+	display: block;
+	margin-right: 10px;
+}
+&_ico-end{
+	content: '';
+	transition: 0.3s;
+	width: 18px;
+	height: 18px;
+	background-image: url('../img/title-end.svg');
+	background-size: 100%;
+	display: block;
+	margin-right: 10px;
+}
+
+
+
+&_img-top{
+	margin-left: auto;
+	width: 24px;
+	height: 24px;
+}
+
+&_plus{
+	color: $color-text-lite;
+}
+
+&_title2{
+color: $color-text-lite;
+
+}
+&_input{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+&_input::placeholder{
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 14px;
+	color: $color-text-lite;
+}
+&_input:focus-visible{
+	border: none;
+	border-color: transparent;
+}
+&_hr{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 1px solid #F1F1F1;
+}
+&_hr2 {
+	margin-top: 10px;
+	border: 1px solid #F1F1F1;
+}
+&_img{
+	width: 30px;
+	height: 30px;
+
+}
+&_inp-f-f{
+	display: flex;
+}
+&_img2{
+	margin-left: auto;
+}
+
+}
+
+
+
+/* конец блоки с задачами */
+

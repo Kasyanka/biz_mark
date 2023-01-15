@@ -1,0 +1,181 @@
+/* выплывашка 2 задачи */
+.hdr-2{
+	position: absolute;
+	right: 25px;
+}
+.hdr-2 .nav2-icon {
+  width: 17px;
+  height: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hdr-2 .nav2-icon__middle {
+  position: relative;
+  width: 17px;
+  height: 1px;
+  background-color: #B7B9BB;
+}
+
+.hdr-2 .nav2-icon__middle::before,
+.hdr-2 .nav2-icon__middle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  background-color: #B7B9BB;
+}
+
+.hdr-2 .nav2-icon__middle::before {
+  top: -7px;
+}
+
+.hdr-2 .nav2-icon__middle::after {
+  top: 7px;
+}
+
+/* Active state */
+.hdr-2 .nav2-icon.nav2-icon--active {
+  position: fixed;
+  top: 90px;
+  right: 25px;
+  z-index: 1;
+}
+
+.hdr-2 .nav2-icon.nav2-icon--active .nav2-icon__middle {
+  background-color: transparent;
+}
+
+.hdr-2 .nav2-icon.nav2-icon--active .nav2-icon__middle::before,
+.hdr-2 .nav2-icon.nav2-icon--active .nav2-icon__middle::after {
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  background-color: transparent;
+}
+
+.hdr-2 .nav2-icon.nav2-icon--active .nav2-icon__middle::before {
+  transform: rotate(45deg);
+}
+
+.hdr-2 .nav2-icon.nav2-icon--active .nav2-icon__middle::after {
+  transform: rotate(-45deg);
+}
+
+  .hdr-2 .nav2 {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 860px;
+    height: 100%;
+    background-color: rgb(255 254 248);
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  .hdr-2 .nav2.nav2--active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.2s ease-in;
+    // z-index: 1;
+  }
+
+  .hdr-2 .nav2-icon {
+    display: flex;
+  }
+
+/* конец выплывашка 2 задачи */
+
+/* выплывашка 1 задачи */
+.hdr-1{
+	position: absolute;
+	right: 25px;
+}
+.hdr-1 .nav1-icon {
+  width: 17px;
+  height: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hdr-1 .nav1-icon__middle {
+  position: relative;
+  width: 17px;
+  height: 1px;
+  background-color: #B7B9BB;
+}
+
+.hdr-1 .nav1-icon__middle::before,
+.hdr-1 .nav1-icon__middle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 17px;
+  height: 1px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  background-color: #B7B9BB;
+}
+
+.hdr-1 .nav1-icon__middle::before {
+  top: -7px;
+}
+
+.hdr-1 .nav1-icon__middle::after {
+  top: 7px;
+}
+
+/* Active state */
+.hdr-1 .nav1-icon.nav1-icon--active {
+  position: fixed;
+  top: 90px;
+  right: 25px;
+  z-index: 2;
+}
+
+.hdr-1 .nav1-icon.nav1-icon--active .nav1-icon__middle {
+  background-color: transparent;
+}
+
+.hdr-1 .nav1-icon.nav1-icon--active .nav1-icon__middle::before,
+.hdr-1 .nav1-icon.nav1-icon--active .nav1-icon__middle::after {
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  background-color: transparent;
+}
+
+.hdr-1 .nav1-icon.nav1-icon--active .nav1-icon__middle::before {
+  transform: rotate(45deg);
+}
+
+.hdr-1 .nav1-icon.nav1-icon--active .nav1-icon__middle::after {
+  transform: rotate(-45deg);
+}
+
+  .hdr-1 .nav1 {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 860px;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  .hdr-1 .nav1.nav1--active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.2s ease-in;
+    z-index: 1;
+  }
+
+  .hdr-1 .nav1-icon {
+    display: flex;
+  }
+
+/* конец выплывашка 1 задачи */

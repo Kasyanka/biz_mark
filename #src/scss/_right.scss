@@ -1,0 +1,178 @@
+
+.right{
+	flex-grow: 1;
+	min-height: 100%;
+	position: relative;
+}
+.cap-fluid{
+	background: $fon;
+	width: 126%;
+}
+
+.cap{
+	background: $fon;
+width: 63%;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&_title{
+		font-size: 18px;
+		font-weight: 700;
+		margin-right: 22px;
+		
+	}
+&_status{
+	font-size: 12px ;
+	display: flex;
+	align-items: center;
+}
+&_status::before{
+	content: '';
+	height: 7px;
+	width: 7px;
+	left: -7px;
+	top: 2px;
+	border-radius: 10px;
+	background: #8BC34A;
+	position: relative;
+	display: block;
+}
+&_top{
+	display: flex;
+	align-items: center;
+	margin-top: 11px;
+	margin-bottom: 5px;
+}
+&_li{
+	font-weight: 600;
+	font-size: 14px;
+	color: #B7B9BB;
+	margin-right: 20px;
+cursor: pointer;
+	padding-bottom: 7px;
+	transition: 0.3s;
+}
+&_li:hover{
+	border-bottom: 3px solid #45587e;
+	color: #4F6EA3;
+}
+&_menu{
+	list-style: none;
+	display: flex;
+}
+&_li.active{
+	color: #4F6EA3;
+	border-bottom: 3px solid #45587e;
+}
+&_ico{
+	margin-right: 16px;
+	position: relative;
+}
+&_uv::before{
+	content: '';
+	height: 11px;
+	width: 11px;
+	left: -7px;
+	top: -12px;
+	border-radius: 11px;
+	background: #FF5722;
+	position: absolute;
+	display: block;
+}
+}
+
+.whitebl{
+	background: white;
+	border-top-left-radius: 10px;
+	font-size: 14px;
+	padding: 10px 20px 0 20px;
+
+
+}
+.whitebl_top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 25px;
+	width: 80%;
+}
+
+.whitebl_fil{
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+	cursor: pointer;
+
+}
+.whitebl_fil::before{
+	content: '';
+	display: block;
+	background: url('../img/filtr.svg') no-repeat 0 0;
+	width: 10px;
+	height: 10px;
+	margin-right: 9px;
+	background-size: 100%;
+}
+.whitebl_fil-sort{
+	display: flex;
+	align-items: center;
+}
+
+.whitebl_sort{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.whitebl_sort::before{
+	content: '';
+	display: block;
+	background: url('../img/sortirovka.svg') no-repeat 0 0;
+	width: 10px;
+	height: 10px;
+	margin-right: 9px;
+	background-size: 100%;
+}
+.whitebl_cols{
+	display: flex;
+}
+.whitebl_col{
+	flex: 0 0 310px;
+	background: #F2F5FA;
+	margin-right: 15px;
+	background: $fon;
+	padding: 15px;
+}
+.whitebl_header{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.whitebl_title{
+	font-size: 16px;
+	font-weight: 600;
+}
+.whitebl_plus{
+	margin-left: auto;
+	font-size: 20px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.whitebl_point{
+	font-size: 20px;
+	position: relative;
+	top: -6px;
+	cursor: pointer;
+
+}
+.whitebl_col-5{
+	background: white;
+}
+.whitebl_title-dobcol{
+	font-weight: 600;
+	font-size: 16px;
+	color: $color-text-lite;
+	cursor: pointer;
+}
+

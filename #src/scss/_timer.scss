@@ -1,0 +1,48 @@
+#sekundomers {
+
+  color: #2c2a2a;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#sekundomers span {
+  display: inline-block;
+
+}
+#sekundomers span:last-child{
+	display: none;
+}
+.item-dr .time{
+  color: #B7B9BB;
+}
+#sekundomers span{
+	font-size: 12px;
+	font-family: "Open Sans", sans-serif;
+}
+#sekundomers button:first-of-type {
+  margin-top: 15px;
+}
+#sekundomers button {
+  color: black;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+#sekundomers button:hover {
+  cursor: pointer;
+}
+#vpered,
+#sanovka{
+	border: none;
+    background: none;
+}
+
+.timer-none{
+	display: none;
+}
+#vperedss,
+#sanovkass{
+	cursor: pointer;
+}
+

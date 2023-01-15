@@ -1,0 +1,150 @@
+/* left левый блок с меню */
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.left {
+	background: $fon;
+
+	padding: 15px;
+	position: relative;
+	flex: 0 0 20%;
+
+	&_burger{
+		position: absolute;
+		right: 15px;
+		top: 30px;
+
+	}
+	&_logo {
+		font-family: "Noto Serif";
+		font-size: 20px;
+		margin-bottom: 20px;
+		display: block;
+	}
+
+	&_logo::before {
+		content: "";
+		height: 10px;
+		width: 10px;
+		left: -7px;
+		top: 2px;
+		border-radius: 10px;
+		background: #333333;
+		position: relative;
+		display: block;
+	}
+
+	&_bl-line {
+		height: 45px;
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+	}
+
+	&_ico {
+		margin-right: 10px;
+		height: 18px;
+		width: 18px;
+	}
+
+	&_title {
+		font-size: 14px;
+		color: $color-text;
+	}
+
+	&__title-2 {
+		font-weight: 700;
+		color: $color-text-lite;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+	&_bl-1 {
+		margin-bottom: 20px;
+	}
+
+	&_bl-line-2,
+	&_bl-line-3 {
+		height: 40px;
+	}
+
+	&_bl-3 &_ico {
+		width: 7px;
+		height: 9px;
+	}
+
+	&_bl-2 &_title::before {
+		content: "";
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-radius: 10px;
+		background: #8BC34A;
+		margin-right: 10px;
+	}
+
+	&_bl-2 &_title {
+		display: flex;
+		align-items: center;
+	}
+
+	&_bl-2 &_title-blue::before {
+		content: "";
+		background: #03A9F4;
+	}
+
+	&_bl-2 {
+		height: 160px;
+		overflow: hidden;
+	}
+
+	&_open-bl-2,
+	&_clouse-bl-2 {
+		color: $color-text-lite;
+		font-size: 12px;
+		margin-bottom: 20px;
+		cursor: pointer;
+	}
+
+	&_open-bl-2 img,
+	&_clouse-bl-2 img {
+		margin-left: 3px;
+		position: relative;
+		top: -1px;
+	}
+	&_clouse-bl-2{
+		display: none;
+	}
+	&_clouse-bl-2 img{
+		transform: rotate(180deg);
+	}
+	&_naims li{
+		height: 25px;
+		display: flex;
+		align-items: center;
+	}
+	&_bl-3{
+		flex-direction: column;
+	}
+	&_naims{
+		margin-left: 20px;
+	}
+	&_naims{
+		display: none;
+	}
+	&_naims-block{
+		display: block;
+	}
+	&_team li:hover{
+		cursor: pointer;
+		color: #03a9f4;
+	}
+	&_team li{
+		transition: 0.3s;
+	}
+}
+
+
+/*конеу left левый блок с меню */
